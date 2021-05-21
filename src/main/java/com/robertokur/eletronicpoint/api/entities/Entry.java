@@ -14,13 +14,14 @@ import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+
 import java.io.Serializable;
 import java.util.Date;
 import com.robertokur.eletronicpoint.api.enums.TypeEnum;
 
 @Entity
 @Table(name = "entry")
-public class Entry {
+public class Entry implements Serializable {
 
 	public Entry() {
 
