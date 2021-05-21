@@ -61,7 +61,7 @@ private static final long serialVersionUID = 3960436649365666213L;
 		this.cnpj = cnpj;
 	}
 
-	@Column(name = "created_date", nullable = false)
+	@Column(name = "createdDate", nullable = false)
 	public Date getCreatedDate() {
 		return createdDate;
 	}
@@ -70,12 +70,12 @@ private static final long serialVersionUID = 3960436649365666213L;
 		this.createdDate = createdDate;
 	}
 
-	@Column(name = "updated_date", nullable = false)
+	@Column(name = "updatedDate", nullable = false)
 	public Date getUpdatedDate() {
 		return updatedDate;
 	}
 
-	public void setDataAtualizacao(Date updatedDate) {
+	public void setUpdatedDate(Date updatedDate) {
 		this.updatedDate = updatedDate;
 	}
 
@@ -84,7 +84,7 @@ private static final long serialVersionUID = 3960436649365666213L;
 		return employees;
 	}
 
-	public void setFuncionarios(List<Employee> employees) {
+	public void setEmployees(List<Employee> employees) {
 		this.employees = employees;
 	}
 	
