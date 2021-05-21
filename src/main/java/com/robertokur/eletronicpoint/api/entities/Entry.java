@@ -85,7 +85,7 @@ public class Entry {
 	}
 
 	@Column(name = "updatedDate", nullable = false)
-	public Date getDataAtualizacao() {
+	public Date getUpdatedDate() {
 		return updatedDate;
 	}
 

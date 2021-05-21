@@ -99,16 +99,16 @@ public class Employee implements Serializable{
 	}
 
 	@Column(name = "qtd_hours_work_day", nullable = true)
-	public Float getQtdHoursWorkDay() {
+	public Float getQtdWorkHourDay() {
 		return qtdHoursWorkDay;
 	}
 	
 	@Transient
-	public Optional<Float> getQtdHoursWorkDayOpt() {
+	public Optional<Float> getQtdWorkHourDayOpt() {
 		return Optional.ofNullable(qtdHoursWorkDay);
 	}
 
-	public void setQtdHorasWorkDay(Float qtdHoursWorkDay) {
+	public void setQtdWorkHourDay(Float qtdHoursWorkDay) {
 		this.qtdHoursWorkDay = qtdHoursWorkDay;
 	}
 
