@@ -46,21 +46,21 @@ public class EmployeeRepositoryTest {
 	}
 
 	@Test
-	public void testBuscarFuncionarioPorEmail() {
+	public void testFindEmployeeByEmail() {
 		Employee employee = this.employeeRepository.findByEmail(EMAIL);
 
 		assertEquals(EMAIL, employee.getEmail());
 	}
 
 	@Test
-	public void testBuscarFuncionarioPorCpf() {
+	public void testFindEmployeeByCpf() {
 		Employee employee = this.employeeRepository.findByCpf(CPF);
 
 		assertEquals(CPF, employee.getCpf());
 	}
 
 	@Test
-	public void testBuscarFuncionarioPorEmailECpf() {
+	public void testFindEmployeeByEmailAndCpf() {
 		Employee employee = this.employeeRepository.findByCpfOrEmail(CPF, EMAIL);
 
 		assertNotNull(employee);
