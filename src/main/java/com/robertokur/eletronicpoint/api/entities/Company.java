@@ -31,7 +31,7 @@ private static final long serialVersionUID = 3960436649365666213L;
 	}
 
 	@Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
 	public Long getId() {
 		return id;
 	}
@@ -40,7 +40,7 @@ private static final long serialVersionUID = 3960436649365666213L;
 		this.id = id;
 	}
 
-	@Column(name = "company_name", nullable = false)
+	@Column(name = "companyName", nullable = false)
 	public String getCompanyName() {
 		return companyName;
 	}
