@@ -3,7 +3,6 @@ package com.robertokur.eletronicpoint.api.services;
 import java.util.Optional;
 
 import com.robertokur.eletronicpoint.api.entities.Employee;
-
 public interface EmployeeService {
 	/**
 	 * Insert a employee in DB.
