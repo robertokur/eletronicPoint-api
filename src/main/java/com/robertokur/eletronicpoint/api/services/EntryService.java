@@ -1,22 +1,18 @@
 package com.robertokur.eletronicpoint.api.services;
 
-import org.springframework.data.domain.PageRequest;
-
 import com.robertokur.eletronicpoint.api.entities.Entry;
 
 import java.util.Optional;
 
-import org.springframework.data.domain.Page;
-
 public interface EntryService {
 	/**
-	 * Return a list paginable with specific employee.
+	 * Return a list specific employee.
 	 * 
 	 * @param employeeId
-	 * @param pageRequest
-	 * @return Page<Employee>
+	 * @param Optional<Entry>
+	 * @return Optional<Employee>
 	 */
-	Page<Entry> findEmployeeById(Long funcionarioId, PageRequest pageRequest);
+	Optional<Entry> findEmployeeById(Long employeeId);
 	
 	/**
 	 * Return a entry for ID.
@@ -35,7 +31,7 @@ public interface EntryService {
 	Entry insert(Entry entry);
 	
 	/**
-	 * Remove a entry fod DB.
+	 * Remove a entry for DB.
 	 * 
 	 * @param id
 	 */

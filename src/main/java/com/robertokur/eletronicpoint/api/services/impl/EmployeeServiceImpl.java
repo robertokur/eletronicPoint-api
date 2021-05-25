@@ -1,4 +1,5 @@
 package com.robertokur.eletronicpoint.api.services.impl;
+import java.util.NoSuchElementException;
 import java.util.Optional;
 
 import org.slf4j.Logger;
@@ -37,8 +38,14 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 	@Override
 	public Optional<Employee> findById(Long id) {
-		log.info("find employee by IDl {}", id);
-		return Optional.ofNullable(this.employeeRepository.findById(id).get());
+		try {
+			
+			log.info("find employee by IDl {}", id);
+			
+			return Optional.ofNullable(this.employeeRepository.findById(id).get());
+		}catch (NoSuchElementException e) {
+			return Optional.empty();
+		}
 	}
 	
 

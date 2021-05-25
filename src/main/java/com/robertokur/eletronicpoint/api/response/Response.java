@@ -2,6 +2,7 @@ package com.robertokur.eletronicpoint.api.response;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class Response<T> {
 
 	private T data;
@@ -28,5 +29,6 @@ public class Response<T> {
 	public void setErrors(List<String> errors) {
 		this.errors = errors;
 	}
+
 
 }

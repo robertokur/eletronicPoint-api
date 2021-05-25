@@ -48,7 +48,7 @@ public class RegisterPJDto {
 		this.email = email;
 	}
 
-	@NotEmpty(message = "password não pode ser vazia.")
+	@NotEmpty(message = "password  cannot be empty.")
 	public String getPassword() {
 		return password;
 	}
@@ -57,7 +57,7 @@ public class RegisterPJDto {
 		this.password = password;
 	}
 
-	@NotEmpty(message = "CPF não pode ser vazio.")
+	@NotEmpty(message = "CPF  cannot be empty.")
 	@CPF(message = "CPF inválido")
 	public String getCpf() {
 		return cpf;
@@ -67,8 +67,8 @@ public class RegisterPJDto {
 		this.cpf = cpf;
 	}
 
-	@NotEmpty(message = "Razão social não pode ser vazio.")
-	@Length(min = 5, max = 200, message = "Razão social deve conter entre 5 e 200 caracteres.")
+	@NotEmpty(message = "Company name  cannot be empty.")
+	@Length(min = 5, max = 200, message = "Company name must contain between 5 and 200 characters.")
 	public String getCompanyName() {
 		return companyName;
 	}
@@ -77,7 +77,7 @@ public class RegisterPJDto {
 		this.companyName = companyName;
 	}
 
-	@NotEmpty(message = "CNPJ não pode ser vazio.")
+	@NotEmpty(message = "CNPJ cannot be empty.")
 	@CNPJ(message = "CNPJ inválido.")
 	public String getCnpj() {
 		return cnpj;
